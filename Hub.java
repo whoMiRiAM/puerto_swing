@@ -1,3 +1,7 @@
+/*
+    MIRIAM GONZÁLEZ PÉREZ
+ */
+
 public class Hub {
     private Contenedores[][] c;
     private static int nContenedor = 1;  //asignaremos este ID a cada contenedor antes de apila
@@ -129,6 +133,19 @@ public class Hub {
         }
         return q;
 
+    }
+
+    /////////////////////////////////////////////////////////
+    public float pesoTotal(int peso){
+
+        float sumaPeso = 0;
+
+        for (int i = 0; i < c.length; i++){
+            for(int j = 0; j < c[0].length; j++){
+                sumaPeso += c[i][j].getPesoC();
+            }
+        }
+        return sumaPeso;
     }
 
 }

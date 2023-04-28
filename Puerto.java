@@ -1,3 +1,7 @@
+/*
+    MIRIAM GONZÁLEZ PÉREZ
+ */
+
 public class Puerto { //implements Serializable
     //////////////////////////////////////////////////////////////////////////////////
     private Hub[] hubs;
@@ -57,6 +61,12 @@ public class Puerto { //implements Serializable
         }
 
         return false;
+    }
+
+    /////////////////////////////////////////////////////////////////
+
+    public float peso(int nhub, int peso){
+         return hubs[nhub].pesoTotal(peso);
     }
 
 

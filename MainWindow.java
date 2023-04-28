@@ -1,3 +1,7 @@
+/*
+    MIRIAM GONZÁLEZ PÉREZ
+ */
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -5,6 +9,7 @@ import java.util.Locale;
 
 
 public class MainWindow extends JFrame {
+    private JButton pesoTotalHub;
     private JCheckBox inspeccionadoEnAduanasCheckBox;
     private JTextField txtIdentificador;
     private JTextField txtPeso;
@@ -148,6 +153,23 @@ public class MainWindow extends JFrame {
             }
         }
         );
+
+        ////////////////////////////////////////////////////////////////////
+
+        pesoTotalHub.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+
+                setTitle("Peso total del hub");
+                int pesoTotH = Integer.parseInt(txtPeso.getText());
+                setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                setVisible(true);
+                pesoTotalHub.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
+                setContentPane(pesoTotalHub);
+                pack();
+            }
+        });
+
+
     }
 }
 

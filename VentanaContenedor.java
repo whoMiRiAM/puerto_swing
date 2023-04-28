@@ -1,6 +1,11 @@
+/*
+    MIRIAM GONZÁLEZ PÉREZ
+ */
+
 import javax.swing.*;
 
 public class VentanaContenedor extends JFrame{
+    private JButton pesoTotalHub;
     private JTextField txtIdentificador;
     private JTextField txtPeso;
     private JTextArea txtDescripcion;
